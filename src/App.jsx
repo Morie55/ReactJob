@@ -15,7 +15,7 @@ import AddJobPage from "./pages/AddJobPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import EditJobPage from "./pages/EditJobPage";
-const baseURL = "http://localhost:5555/api/";
+const baseURL = import.meta.env.VITE_APP_API_URL;
 axios.defaults.baseURL = baseURL;
 
 const App = () => {
