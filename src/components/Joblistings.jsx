@@ -12,7 +12,7 @@ const Joblistings = ({ isHome = false }) => {
     const fetchJobs = async () => {
       setLoading(true);
       try {
-        const { data } = await axios.get(apiUrl); // Axios handles JSON parsing automatically
+        const { data } = await axios.get(apiUrl);
         setJobs(data);
       } catch (error) {
         console.error("Error fetching data:", error.message);
@@ -20,9 +20,8 @@ const Joblistings = ({ isHome = false }) => {
         setLoading(false);
       }
     };
-
     fetchJobs();
-  }, [apiUrl]); // Dependency to re-fetch when `isHome` changes
+  }, [apiUrl]);
 
   return (
     <section className="bg-blue-50 px-4 py-10">

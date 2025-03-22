@@ -2,6 +2,7 @@
 
 import axios from "axios";
 const baseURL = import.meta.env.VITE_APP_API_URL;
+console.log("API Base URL:", baseURL); // Add this line to check
 axios.defaults.baseURL = baseURL;
 
 export const addJob = async (newJob) => {

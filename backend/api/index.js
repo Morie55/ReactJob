@@ -1,8 +1,8 @@
 import express, { response } from "express";
-import { PORT, mongoDBURL } from "./config.js";
+import { PORT, mongoDBURL } from "../config.js";
 import mongoose from "mongoose";
-import { Job } from "./models/jobModel.js";
-import jobRoutes from "./routes/jobRoutes.js";
+import { Job } from "../models/jobModel.js";
+import jobRoutes from "../routes/jobRoutes.js";
 import cors from "cors";
 
 const app = express();
